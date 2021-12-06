@@ -1,0 +1,12 @@
+<h1>Dictionaries</h1>
+<ul>
+  <% @dicts.each do |dict| %>
+    <li>
+      <%= link_to dict.name, dict %>
+    </li>
+  <% end %>
+</ul>
+
+<p>
+ <%= link_to "New Dictionary", new_dict_path %>
+</p>

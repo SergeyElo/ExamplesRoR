@@ -1,0 +1,18 @@
+<%= form_with model: dict do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+    <% dict.errors.full_messages_for(:name).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :condition %><br>
+    <%= form.text_field :condition %><br>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,12 @@
+<%= form_with model: [ @dict, @dict.words.build ] do |form| %>
+  <p>
+    <%= form.label :key %><br>
+    <%= form.text_field :key %><br>
+    <%= form.label :value %><br>
+    <%= form.text_field :value %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+

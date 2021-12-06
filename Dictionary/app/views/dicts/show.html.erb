@@ -1,0 +1,21 @@
+<h2><%= @dict.name %></h2>
+
+<ul>
+  <li><%= link_to "Edit", edit_dict_path(@dict) %></li>
+  <li><%= link_to "Destroy", dict_path(@dict), method: :delete, data: { confirm: "Are you sure?" } %></li>
+</ul>
+<p><a href="/dicts">Select Dictionary</a></p>
+
+<h2>Words</h2>
+<%= render @dict.words %>
+
+<h2> Add a word</h2>
+<%= render 'words/form' %> 
+
+
+
+ 
+   
+
+
+
